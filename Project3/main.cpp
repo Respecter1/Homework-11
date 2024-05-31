@@ -1,12 +1,12 @@
 /*
-	3. Створіть у класі SimpleCircle конструктор-копіювальник.
+	3. РЎС‚РІРѕСЂС–С‚СЊ Сѓ РєР»Р°СЃС– SimpleCircle РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ-РєРѕРїС–СЋРІР°Р»СЊРЅРёРє.
 */
 
 class SimpleCircle
 {
 public:
 	SimpleCircle(double);
-	SimpleCircle(const SimpleCircle&); // Конструктор копіювання
+	SimpleCircle(const SimpleCircle&); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	~SimpleCircle();
 
 	SimpleCircle& operator++(); 
