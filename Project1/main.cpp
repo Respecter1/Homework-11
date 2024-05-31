@@ -1,6 +1,6 @@
 /*
-	1. Перевантажте оператори преінкремента та постінкремента для використання
-	у вашому класі SimpleCircle зі змінною itsRadius.
+	1. РџРµСЂРµРІР°РЅС‚Р°Р¶С‚Рµ РѕРїРµСЂР°С‚РѕСЂРё РїСЂРµС–РЅРєСЂРµРјРµРЅС‚Р° С‚Р° РїРѕСЃС‚С–РЅРєСЂРµРјРµРЅС‚Р° РґР»СЏ РІРёРєРѕСЂРёСЃС‚Р°РЅРЅСЏ
+	Сѓ РІР°С€РѕРјСѓ РєР»Р°СЃС– SimpleCircle Р·С– Р·РјС–РЅРЅРѕСЋ itsRadius.
 */
 
 class SimpleCircle
@@ -9,8 +9,8 @@ public:
 	SimpleCircle();                  
 	~SimpleCircle();                 
 
-	SimpleCircle operator++(int);    // Постінкремент
-	SimpleCircle& operator++();      // Преінкремент
+	SimpleCircle operator++(int);    // РџРѕСЃС‚С–РЅРєСЂРµРјРµРЅС‚
+	SimpleCircle& operator++();      // РџСЂРµС–РЅРєСЂРµРјРµРЅС‚
 
 private:
 	double itsRadius;
@@ -27,7 +27,7 @@ SimpleCircle::~SimpleCircle()
 	
 }
 
-// Постінкремент
+// РџРѕСЃС‚С–РЅРєСЂРµРјРµРЅС‚
 SimpleCircle SimpleCircle::operator++(int)
 {
 	SimpleCircle temp = *this;  
@@ -35,7 +35,7 @@ SimpleCircle SimpleCircle::operator++(int)
 	return temp;                
 }
 
-// Преінкремент
+// РџСЂРµС–РЅРєСЂРµРјРµРЅС‚
 SimpleCircle& SimpleCircle::operator++()
 {
 	++itsRadius;               
